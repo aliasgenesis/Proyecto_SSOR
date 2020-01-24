@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 1</title>
+	<link rel="stylesheet" type="text/css" href="../css/activity1.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<h1 style="text-align: center;">Actividad 1</h1><br>
+		</div>
+		<div class="content">
+			<h2>Instrucciones</h3><br>
+			<ul>
+				<li>Instalar Windows y Linux Desktop nativo.</li>
+				<li>Describir las caracteristicas mas sobresalientes de cada SO.</li>
+			</ul><br><br>
+			<h2>Requerimientos</h2><br>
+			<ul>
+				<li>Computadora objetivo.</li>
+				<li>Computadora secundaria para generar dispositivos booteables.</li>
+				<li>USB Stick de por lo menos 6GB.</li>
+				<li>Conexion a internet.</li>
+				<li>Herramienta para creacion de USB's booteables (en esta ocasion utilizaremos <i>Rufus</i>, pero puedes utilizar el de tu preferencia.</li>
+				<li>Imagenes (ISO) de ambos SO (previamente descargados en la computadora secundaria, al igual que la herramienta del punto anterior).</li>
+			</ul><br><br><br>
+
+			<h2>Comencemos</h2><br><br>
+
+			<p><b>NOTA:</b> Debemos instalar Windows primero, y posteriormente Linux, o tendremos problemas a la hora de querer ejecutar uno u otro SO.</p><br><br>
+
+			<ol>
+				<li><p>Descargar nuestra herramienta para la creacion de USB's booteables. Puedes utilizar la de tu preferencia, o descargar <a href="https://rufus.ie/"> Rufus.</a></p></li><br>
+				<div class="photo">
+					<img src="1.png" height="400" width="600"><br><br>
+				</div>
+
+				<li><p>Una vez descargada la herramienta, procederemos a obtener las imagenes ISO para poder montar los SO en la USB. Para obtener el ISO de Linux (Ubuntu para este caso), puedes dar click <a href="https://ubuntu.com/#download">AQUI.</a><br>Te recomiendo seleccionar la version LTS, ya que es la mas estable.</p></li><br>
+				<div class="photo">
+					<img src="2.png" height="350" width="700"><br><br><br>
+				</div>
+
+				<li><p>Y para obtener el ISO de W10 podemos buscarlo de manera independiente, o entrar al siguiente <a href="https://www.microsoft.com/es-mx/software-download/windows10">LINK</a>, en donde podras descargar la herramienta de Microsoft para este paso.</p></li><br>
+				<div class="photo">
+					<img src="3.png" height="350" width="700"><br><br>
+				</div>
+
+				<li><p>Una vez realizados los tres pasos anteriores, procederemos a montar Windows es nuestra USB. Para esto, es necesario conectar el pendrive, ejecutar Rufus, seleccionar nuestra USB en la primera opcion, dar click en el boton <q>SELECCIONAR</q> y elegir el ISO de W10, asegurarse que el esquema de particion sea MBR, y dar click en <q>EMPEZAR.</q></p></li><br>
+				<div class="photo">
+					<img src="4.png" height="350" width="400"><br><br>
+				</div>
+				<p>Una vez realizado esto, procederemos a extraer la memoria y comenzar con la instalacion del SO.</p><br>
+
+				<li><p>Para instalar W10 en nuestra maquina objetivo deberemos apagarla, conectar la USB, y volver a encender el equipo para acceder a la BIOS (este metodo varia dependiendo del equipo; tendras que investigar tu caso particular, aunque suele ser con la tecla esc, f2, f12 etc...). Una vez en la BIOS, deberemos inicial desde la USB y comenzar con el proceso de instalacion, que es bastante sencillo.</p></li><br>
+				<div class="photo">
+					<img src="5.jpg" height="350" width="600"><br><br>
+				</div>
+				<p>Cuando nos pidan la licencia, daremos click en la parte baja que nos da la opcion de proceder sin la misma.<br>Cuando pregunte que tipo de instalacion deseamos, siguiendo la tematica de esta practica eligiremos instalar desde cero (Personalizada: Instalar solo Windows).</p><br><br>
+
+				<li><p>En la ventana que nos permite seleccionar donde instalar el SO, podremos borrar todo lo que previamente existia en la computadora, y utilizarla por completo para W10. Eso haremos en este caso.</p></li><br><br>
+				<div class="photo">
+					<img src="9.jpg" height="350" width="600"><br><br>
+				</div>
+				<p>Finalmente despues de esto, la instalacion comenzara. Una vez que finalice, tendremos completo acceso a Windows.</p><br><br>
+				<div class="photo">
+					<img src="10.jpg" height="350" width="600"><br><br>
+				</div>
+
+				<li><p>Finalizado este proceso, liberaremos la USB, la regresaremos a la computadora secundaria, y repetiremos el paso 4, pero ahora generando la USB booteable con Linux.<br>
+				En el caso mas general, Rufus nos advertira que faltan algunos archivos por descagar para poder generar el boot correctamente, y que es necesario acceder a internet para esto; aceptamos, y comenzamos el proceso de creacion del boot.</p></li><br><br>
+
+				<li><p>Ahora, antes de proceder a la instalacion de Linux, debemos pensar si queremos instalar Linux en la misma particion de disco donde esta W10 o si queremos que este en una parte separada. Si decidimos la segunda opcion, deberemos hacer espacio en la computadora objetivo para ello, por lo que la encenderemos y nos dirigiremos a <q>Crear y formatear particiones del disco duro</q>, seleccionaremos el disco principal, click derecho, reducir volumen, y elegiremos (en MB) cuanto espacio queremos dejar para Linux.</p></li><br><br>
+				<div class="photo">
+					<img src="extra1.png" height="350" width="600"><br><br>
+					<img src="extra2.png" height="350" width="600"><br><br>
+				</div>
+				<p>En mi caso deje 350 gb para Windows, e hice una particion de 150gb para Linux. Las cantidades de espacio son para tu eleccion, aunque para que Ubuntu pueda funcionar sin problemas, deberiamos darle por lo menos 30GB de espacio aproximadamente.</p><br><br>
+
+				<li style="color: white;"><p>Ahora estamos listos para instalar Linux. Repetiremos el paso 5 para entrar a la BIOS y correr la computadora con Linux (o W10 ya nos da la opcion de encendido avanzado, entrando al menu <q>Cambiar opciones avanzadas de inicio</q> y seleccionando la opcion <q>Reiniciar ahora</q>; esto con la USB ya conectada.<br>Una vez que inicie Ubuntu, podemos ver un menu como el siguiente.</p></li><br><br>
+				<div class="photo">
+					<img src="14.jpg" height="350" width="600"><br><br>
+				</div>
+
+				<li style="color: white;"><p>Seleccionaremos la opcion <q>Install Ubuntu</q>.<b> En Actualizaciones y otro software</b> seleccionamos nuestras preferencias (no afectan el funcionamiento del SO), y en <b>Tipo de instalacion</b> podemos seleccionar <q>Instalar Ubuntu junto a Windows 10</q> (que es la opcion mas sencilla y la que elegiremos si no hicimos una particion de disco), o proceder a <q>mas opciones</q> para distribuir mejor el espacio de la particion (si hicimos particion de disco); hay que hacer esto solamente si se sabe completamente bien lo que se esta haciendo. Por el momento, la primera opcion funciona excelente.</p></li><br>
+				<div class="photo">
+					<img src="16.jpg" height="350" width="600"><br><br>
+				</div>
+				<p style="color: white;">Despues de esto, la instalacion se ejecutara con normalidad, y cuando termine, tendremos acceso a Ubuntu.</p><br><br>
+				<div class="photo">
+					<img src="17.jpg" height="350" width="600"><br><br>
+					<img src="18.jpg" height="350" width="600"><br><br>
+				</div>
+
+				<p style="color: white;">En una situacion normal, la computadora nos pedira reiniciarse para terminar la instalacion de Ubuntu. Esto tambien nos dara la oportunidad de ver que, cuando la computadora vuelva a iniciar, ya tendremos un nuevo menu que nos permitira ejecutar Windows o Linux. Si no se nos pide reiniciar, de cualquier manera ya a partir de ahora tendemos dicha opcion cada que la computadora se encienda.<br><b>Felicidades. Ya tienes una computadora con Dual Boot Windows / Linux</b></p><br><br>
+				<div class="photo">
+					<img src="19.jpg" height="350" width="600"><br><br><br><br><br><br>
+				</div>
+			</ol>
+
+			<h2 style="color: white;">Caracteristicas mas sobresalientes de Windows 10</h2><br>
+			<ul style="color: white;">
+				<li>Regresa el Menu de inicio. Gracias.</li>
+				<li>Se presenta el primer asistente inteligente por voz: Cortana.</li>
+				<li>Mejora de la multitarea y opcion de crear escritorios independientes.</li>
+				<li>Facilidad para administrar todo el control del dispositivo.</li>
+				<li>Mejoras en la seguridad e integridad de los datos.</li>
+				<li>Mejor manejo de la nube.</li>
+				<li>Mejor soporte para grupos de usuarios y conectividad de red.</li>
+				<li>Mejoras a Windows Sandbox para soporte de multiples SO.</li>
+				<li>Mejoras en los protocolos DHCP y DNS principalmente.</li>
+				<li>Ejecucion mas ligera del SO en general.</li><br><br><br><br>
+			</ul>
+
+			<h2 style="color: white;">Caracteristicas mas sobresalientes de Ubuntu 18.04</h2><br>
+			<ul style="color: white;">
+				<li>Mejora en la instalaccion de APPs (ahora se necesitan menos comandos).</li>
+				<li>Instalacion y ejecucion mas ligera.</li>
+				<li>Mejoras de seguridad de accesso a la cuenta, y de informacion e integridad de la misma.</li>
+				<li>Mejora en las opciones y menus de configuraciones.</li>
+				<li>Generacion de una nueva version del Kernel.</li>
+				<li>Mejoras del Shell.</li>
+				<li>Habilitacion de nuevos y mejores drivers.</li>
+				<li>Mejoras de sincronizacion con la nube.</li>
+				<li>Mejoras en el manejo de la energia de la computadora.</li>
+				<li>Nuevos ambientes de escritorio para manejo, trabajo e interfaz de usuario.</li>
+			</ul>
+		</div>
+	</header>
+</body>
+</html>
