@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Actividad 2</title>
-    <link rel="stylesheet" type="text/css" href="../css/activity1.css">
+    <link rel="stylesheet" type="text/css" href="../css/activity2.css">
   </head>
   <body>
     <header>
@@ -10,14 +10,65 @@
         <h1 style="text-align: center;">Actividad 2</h1><br><br>
       </div>
       <div class="content">
-        <h2>Instrucciones</h2>
-        <ul>
-          <li>Desarrollar un programa para ver los servicios de Windows y Linux.</li>
-        </ul><br><br><br>
-        <h2>Requerimientos</h2>
-        <ul>
-          <li>La ultima version de Python instalado y funcionando en ambos Sistemas Operativos.</li>
-        </ul>
+        <h2>Instrucciones</h2><br>
+        <div class="steps">
+          <ul>
+            <li>Desarrollar un programa para ver los servicios de Windows y Linux.</li>
+          </ul><br><br>
+        </div>
+        <h2>Requerimientos</h2><br>
+        <div class="steps">
+          <ul>
+            <li>La última versión de Python instalado en ambos Sistemas Operativos.</li><br><br><br>
+          </ul>
+          <h2>Comencemos</h2><br><br><br>
+          <ol>
+            <li>Lo primero será instalar Python en Windows 10. A la fecha, la ultima versión corresponde a la 3.8.1, y
+            puedes acceder a la liga de descarga <a href="https://www.python.org/downloads/release/python-381/">aquí.</a></li><br><br>
+            <li>Nos dirigiremos a la parte inferior, y seleccionaremos la opcion <q>Windows x86-64 executable installer</q>
+            si tu computadora es de 64 bits. Si tu computadora es de 32 bits, deberás elegir la opción <q>Windows x86 executable installer</q>.</li><br><br>
+            <div class="photo">
+              <img src="1.png" height="400" width="800"><br><br>
+            </div>
+            <p><b>Si no estás seguro acerca de los bits de tu computadora, puedes consultarlo dando clic derecho en el botón
+            de inicio de Windows, seleccionando la opción <q>Sistema</q>, y en el campo denominado <q>Tipo de sistema</q> podrás verificar
+            este dato.</b></p><br><br>
+            <div class="photo">
+              <img src="2.png" height=""="200" width="400"><br><br>
+            </div>
+            <p>Si el instalador solo nos muestra las opciones de reparar o desinstalar, querrá decir que ya tenemos instalado Python.</p><br>
+            <div class="photo">
+              <img src="3.png" height=""="300" width="600"><br><br>
+            </div>
+            <b><li>Nos aseguramos de tener seleccionado el recuadro de <q>Add Python to PATH</q>,ya que nos facilitaría bastantes procesos en un futuro, para todo
+            tipo de cosas. Y posteriormente seleccionamos <q>Instalar ahora</q>. Una vez terminada la instalación, cerramos el asistente de instalación sin más.</li><br>
+            <p>Ahora procederemos a instalar Python en Linux - Ubuntu.<br>En sistemas operativos como Ubuntu, la instalación de programas suele ser completamente distinta
+            a las de Windows. En este caso tendremos que recurrir a la línea de comandos (también conocida como consola o terminal) para poder proceder.</p><br><br>
+            <li>Lo que haremos será abrir la terminal. Para esto podemos presionar el boton de Windows de nuestro teclado y escribir <q>Terminal</q>, o dar clic
+            en el menú de opciones ubicado en la esquina inferior izquierda y escribir la misma opción mencionada. Ahora procederemos a ejecutar los siguientes comandos
+            uno por uno, en el orden presentado en las imagenes.</li></b><br><br>
+            <div class="photo">
+              <img src="4.png" height="100" width="600"><br><br>
+              <img src="5.png" height="100" width="600"><br><br>
+              <img src="6.png" height="100" width="600"><br><br>
+              <img src="7.png" height="100" width="600"><br><br>
+            </div>
+            <li>Finalmente podremos crear el programa para mostrar los servicios tanto de Windows como de Linux.<br>El código es el siguiente:</li><br>
+            <div class="photo">
+              <img src="8.png" height="300" width="600"><br><br>
+            </div>
+            <p>Lo que hace el programa es reconocer en qué Sistema Operativo se está ejecutando, y posteriormente ejecutar un comando para obtener una lista completa
+            de servicios: activos, detenidos, y en pausa, para escribirlos en un documento de texto plano y también mostrarlos en pantalla mediante la consola.<br>Para ejecutar
+            en Windows, basta con dar doble clic al programa; para ejecutar en Linux, podemos abrir la consola de comandos, dirigirnos hacia la carpeta en donde tenemos el
+            programa, y ejecutarlo mediante el comando python3 services.py</p><br><br>
+            <div class="photo">
+              <h3>WINDOWS:</h3><br>
+              <img src="9.png" height="500" width="800"><br><br>
+              <h3>LINUX:</h3><br>
+              <img src="10.png" height="500" width="800"><br><br>
+            </div>
+          </ol>
+        </div>
       </div>
     </header>
   </body>
