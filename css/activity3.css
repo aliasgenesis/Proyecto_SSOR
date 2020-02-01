@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header {
+  background-image: url(../Actividad_3/background.jpg);
+	width: 100%;
+	height: 750vh;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+}
+
+.main {
+  margin-top: 15px;
+}
+
+.back-button{
+	float: right;
+	margin-right: 100px;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px;
+	font-size: 16px;
+	transition: 0.4s ease;
+}
+
+.content {
+  float: left;
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.steps {
+  font-size: 20px;
+}
+
+.photo {
+	margin-left: 250px;
+}
