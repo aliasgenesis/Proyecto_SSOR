@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 8</title>
+    <link rel="stylesheet" type="text/css" href="../css/activity8.css">
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <h1 style="text-align: center;">Actividad 7</h1><br><br>
+      </div>
+      <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+    </header>
+    <div class="background_image">
+      <div class="content">
+        <h2 style="color: white;">Instrucciones</h2><br>
+        <div class="steps">
+          <ul style="color: white;">
+            <li>Instalar windows server y destacar las caracteristicas de active directory y ejemplos.</li><br><br>
+          </ul>
+        </div>
+        <h2 style="color: white;">Requerimientos</h2><br>
+        <div class="steps">
+          <ul style="color: white;">
+            <li>Conexión a internet para poder descargar Windows Server</li>
+            <li>USB con - por lo menos - 5 GB libres.</li>
+            <li>Un ISO de Ubuntu para poder arreglar el boot que se perderá.</li><br><br>
+          </ul>
+          <h2 style="color: white;">Comencemos</h2><br><br>
+          <ol style="color: white;">
+            <li>Lo primero que haremos será acceder a la siguiente <a href="https://www.microsoft.com/es-xl/evalcenter/evaluate-windows-server-2019">liga</a> para descargar Windows Server. Descargaremos el ISO y lo montaremos en una memoria USB como
+                lo hemos ya hecho con anterioridad para cualquier otro sistema operativo</li><br><br>
+            <li>Una vez realizado esto (o mientras se descarga el ISO) nos dirigiremos a la computadora en donde instalaremos el S.O. y generaremos una partición de disco, asegurándonos de que sea en formato NTFS y que tenga un espacio suficiente
+                para poder instalar y manejar Windows Server (Esto se debe hacer porque a Windows no le gusta tener que compartir espacio con otro Windows, a diferencia de Linux, que honestamente no le importa; no es egoísta). Yo le asignaré 100GB. Ya hemos visto en una práctica anterior cómo generar una partición, así que podemos remitirnos a ella en caso de dudas.</li><br><br>
+            <li>Ya que se haya descargado el ISO, que lo hayamos montado en la USB y que tengamos la partición hecha, apagaremos la computadora objetivo y al volverla a encender nos aseguraremos de que corra con la memoria que tiene Windows Server.
+                De esta manera podremos proceder con la instalación. Observaremos que la interfaz y los pasos son bastante similares a aquellos para instalar Windows 10.</li><br><br>
+            <div class="photo">
+              <img src="1.jpg" height="400" width="800"><br><br>
+              <img src="2.jpg" height="400" width="800"><br><br>
+              <p>Elegimos la opción Datacenter Experiencia de Escritorio, ya que ésta es la versión más completa y la que viene con interfaz gráfica como Windows. Si no seleccionamos la opción de escritorio, terminaremos solo con una terminal de comandos.</p><br><br>
+              <img src="3.jpg" height="400" width="800"><br><br>
+              <p>Elegimos la partición que designamos previamente.</p><br><br>
+              <img src="4.jpg" height="400" width="800"><br><br>
+              <p>Una vez terminada la instalación podremos acceder al sistema operativo y ver su funcionamiento. El problema que tendremos aquí es que la instalación de Windows habrá borrado GRUB (que es el boot de Linux que nos permitía arrancar Windows o Ubuntu).</p><br><br>
+            </div>
+            <li>Lo que haremos ahora será montar Ubuntu en una memoria y correrlo en la computadora objetivo como si lo fuéramos a instalar, pero en lugar de elegir la opción <q>Instalar Ubuntu</q>, elegiremos la opción <q>Probar Ubuntu</q>.</li><br><br>
+            <li>Una vez entrando al sistema, abriremos una consola de comandos y escribiremos lo siguiente: </li><br><br>
+              <div class="photo">
+                <img src="5.png" height="200" width="800"><br><br>
+              </div>
+            <li>Terminado esto se instalará y ejecutará la herramienta de arreglo de GRUB de Linux, lo que hará que podamos volver a correr Ubuntu como antes.</li><br><br>
+            <li>Cuando aparezca el programa, elegiremos la primera opción, que es la reparación recomendada: </li><br><br>
+              <div class="photo">
+                <img src="6.png" height="400" width="800"><br><br>
+              </div>
+            <li>Terminado este proceso deberíamos tener recuperado el GRUB, de manera que podremos acceder nuevamente a Ubuntu: </li><br><br>
+              <div class="photo">
+                <img src="7.jpg" height="400" width="800"><br><br>
+              </div>
+            <li>Y si seleccionamos Windows desde GRUB, nos aparecerá la opción de elegir entre ejecutar Windows, o Windows Server.</li><br><br>
+              <div class="photo">
+                <img src="8.jpg" height="400" width="800"><br><br><br><br><br><br>
+              </div>
+          </ol>
+          <h2 style="color: white;">Principales Características de Active Directory</h2><br><br>
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+        <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+      </div>
+    </div>
+  </body>
+</html>
