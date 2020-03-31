@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 10</title>
+    <link rel="stylesheet" type="text/css" href="../css/activity10.css">
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <h1 style="text-align: center;">Actividad 10</h1><br><br>
+      </div>
+      <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+    </header>
+    <div class="background_image">
+      <div class="content">
+        <h2 >Instrucciones</h2><br>
+        <div class="steps">
+          <ul>
+            <li>Instalar un sistema en django con bases de datos y uno en rubi on rails con bases de datos y asignar diferentes
+                permisos de acceso a los grupos de usuarios en cada sistema.</li><br><br>
+          </ul>
+        </div>
+        <h2>Requerimientos</h2><br>
+        <div class="steps">
+          <ul>
+            <li>Windows Server instalado y configurado con usuarios.</li>
+            <li>Conexión a internet.</li><br><br>
+          </ul>
+          <h2>Comencemos</h2><br><br>
+          <ol>
+            <li>Para desarrollar esta práctica, lo primero que necesitamos hacer es instalar Djando y Ruby on Rails. Esto ha ya sido hecho previamente
+                en otras prácticas (la 5 y 6 específicamente). De manera que se pueden seguir los mismos pasos para la instalación y configuración de programas
+                y paquetería necesaria hecha en Windows, ya que en Windows Server esto funciona de la misma manera.</li><br><br>
+            <li>Una vez hecho esto, podemos configurar dos proyectos; uno con Django y otro con Ruby on Rails. Todo esto también ya se hizo previamente
+                y también funciona de la misma manera en Windows Server como lo hace en Windows 10, por lo que podemos seguir las instrucciones de las
+                prácticas correspondientes para lograr esto.</li><br><br>
+            <li style="color: white;">Finalmente podemos proceder con la parte de autenticación para los usuarios de Active Directory, y comenzaremos con Django. <br> Para hacer
+                que nuestro sistema acepte autenticación por medio de los usuarios de AD, lo primero que haremos será acceder al apartado MIDDLEWARE_CLASSES del
+                documento settings.py del sistema objetivo, y añadiremos las líneas de código: 'django.contrib.auth.middleware.AuthenticationMiddleware' y
+                'django.contrib.auth.middleware.RemoteUserMiddleware' (con todo y las comillas simples).</li><br><br>
+            <li style="color: white;">Después de esto, en el mismo documento nos dirigiremos a AUTHENTICATION_BACKENDS y cambiaremos la línea de código existente por 'django.contrib.
+                auth.backends.RemoteUserBackend'.</li><br><br>
+            <li>Finalmente para la configuración de derechos de acceso, es necesario modificar la clase User de Django agregando el atributo correspondiente al
+                tipo de usuario que queremos que pueda tener acceso al sistema objetivo.</li><br><br>
+            <li>Con esto habremos terminado la configuración para Django. Ahora toca la configuración para Rails. En este caso haremos uso de Adauth, que es una
+                interfaz de Rails que permite la autenticación por medio de Active Directory. Lo primero que necesitamos hacer es añadir la gema 'adauth' a nuestro
+                gemfile, y posteriormente realizar un bundle install.</li><br><br>
+            <li>Una vez realizado todo esto, crearemos un nuevo documento config por medio del comando en cmd 'rails g adauth:config', y llenaremos los campos pertinentes en
+                la ruta config/initializers/adauth.rb</li><br><br>
+            <li>Finalmente, para poder relacionar nuestro modelo de usuarios a Adauth podemos utilizar el siguiente snippet.</li><br><br>
+            <div class="photo">
+              <img src="1.png" height="300" width="600"><br><br>
+            </div>
+            <li>Posterior a esto podremos controlar los accesos a nuestro sistema objetivo también en Rails.</li><br><br><br><br>
+          </ol>
+        </div>
+      </div>
+      <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+    </div>
+  </body>
+</html>
