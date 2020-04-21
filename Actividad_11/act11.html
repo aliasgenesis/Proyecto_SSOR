@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 11</title>
+    <link rel="stylesheet" type="text/css" href="../css/activity11.css">
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <h1 style="text-align: center;">Actividad 11</h1><br><br>
+      </div>
+      <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+    </header>
+    <div class="background_image">
+      <div class="content">
+        <h2>Instrucciones</h2><br>
+        <div class="steps">
+          <ul>
+            <li>Instalar linux server y configurar 10 usuarios y 4 grupos de usuarios.</li><br><br>
+          </ul>
+        </div>
+        <h2>Requerimientos</h2><br>
+        <ul>
+          <li>Conexión a internet para poder descargar el ISO de nuestra distribución.</li><br><br>
+        </ul>
+        <h2>Comencemos</h2><br><br>
+        <ol>
+          <li>En este caso para la implementación de un servidor Linux utilizaremos OpenSUSE, por el hecho de experimentar con una nueva distribución. Para ello será necesario entrar a su <a href="https://www.opensuse.org/">página oficial</a>
+              y descargar la versión LEAP, que es la más estable.</li><br><br>
+          <li>Una vez descargado el ISO, lo montaremos en una USB como lo hemos hecho ya anteriormente.</li><br><br>
+          <li>Ahora procederemos a instalar la distribución en nuestra máquina. Iniciaremos la computadora con la USB y seleccionaremos la opción de instalación.</li><br><br>
+          <div class="photo">
+            <img src="1.jpg" height="400" width="800"><br><br>
+          </div>
+          <li>Comenzaremos con las configuraciones básicas.</li><br><br>
+          <div class="photo">
+            <img src="2.jpg" height="400" width="800"><br><br>
+          </div>
+          <li>La parte de la gestión de particiones es importante, ya que tenemos más Sistemas Operativos y Particiones generadas, así que un error en este paso podría significar un severo problema. Para evitar problemas nos aseguramos de entrar a la parte avanzada de Particiones
+              y verificamos que no se modifiquen sistemas o particiones innecesariamente. En este caso seleccionremos la reducción o eliminación de los Sistemas Windows en caso de ser necesario, la eliminación de sistemas Linux en caso de ser necesario (sí se perdió Ubuntu, así
+              que hay que tomar esto en consideración), y para las particiones le indiqué que no las tocara, porque en caso de una mala modificación, podríamos perder el acceso incluso a todos nuestros sistemas operativos instalados.</li><br><br>
+          <div class="photo">
+            <img src="3.jpg" height="400" width="800"><br><br>
+          </div>
+          <li>Ahora configuraremos a nuestro usuario base.</li><br><br>
+          <div class="photo">
+            <img src="4.jpg" height="400" width="800"><br><br>
+          </div>
+          <li>Y finalmente iniciaremos con la instalación del Sistema Operativo. Puede tomar hasta 30 minutos aproximadamente.</li><br><br>
+          <div class="photo">
+            <img src="5.jpg" height="400" width="800"><br><br>
+          </div>
+          <li>Ahora nos dirigiremos a crear 10 nuevos usuarios. Para esto abriremos la herramienta YAST, y nos dirigiremos a <q>Seguridad y Usuario</q> >> <q>Administración de Usuario y Grupo.</q></li><br><br>
+          <div class="photo">
+            <img src="6.png" height="400" width="800"><br><br>
+          </div>
+          <li>Aquí podremos ver los usuarios ya creados (actualmente solo el de base), así como datos del mismo, e información de grupos.</li><br><br>
+          <li>Lo primero que haremos será dar clic en el botón <q>Añadir</q> y configuraremos un nuevo usuario. Así hasta completar los 10 requeridos.</li><br><br>
+          <div class="photo">
+            <img src="7.png" height="400" width="800"><br><br>
+            <img src="8.png" height="400" width="800"><br><br>
+            <img src="12.png" height="400" width="800"><br><br>
+          </div>
+          <li>Ahora pasaremos a la pestaña de Grupos. Lo primero que veremos será el Grupo Usuarios, en donde estarán todos los usuarios creados anteriormente, incluido el de base.</li><br><br>
+          <div class="photo">
+            <img src="9.png" height="400" width="800"><br><br>
+          </div>
+          <li>Daremos clic en Añadir y crearemos 4 grupos. Y de paso aprovecharemos para agregar algunos usuarios a cada uno. Esto lo necesitaremos para la práctica siguiente. </li><br><br>
+          <div class="photo">
+            <img src="10.png" height="400" width="800"><br><br>
+          </div>
+          <li>Una vez terminado todo, se verá de la siguiente manera, con los usuarios correspondientes en cada grupo:</li><br><br>
+          <div class="photo">
+            <img src="11.png" height="400" width="800"><br><br>
+          </div>
+          <li>Con esto habremos terminado la práctica.</li><br><br>
+        </ol>
+        <h2>Referencias Bibliográficas</h2><br>
+        <ul>
+          <li>Como Gestionar Usuarios, Grupos y Permisos en Linux. (2016, Mayo 22). Consultado en Abril 21, 2020, de https://computernewage.com/2016/05/22/gestionar-usuarios-y-permisos-en-linux/</li>
+          <li>The Complete Guide to “useradd” Command in Linux – 15 Practical Examples. (2014, Marzo 28). Consultado en Abril 21, 2020, de https://www.tecmint.com/add-users-in-linux/</li>
+          <li>3 Managing Users with YaST. Consultado en Abril 21, 2020, de https://doc.opensuse.org/documentation/leap/archive/42.2/startup/html/book.opensuse.startup/cha.y2.userman.html#sec.y2.userman.main</li>
+          <li>Users and groups (Español). Consultado en Abril 21, 2020, de https://wiki.archlinux.org/index.php/Users_and_groups_(Español)</li><br><br><br><br>
+        </ul>
+        <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+      </div>
+    </div>
+  </body>
+</html>
