@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 12</title>
+    <link rel="stylesheet" type="text/css" href="../css/activity12.css">
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <h1 style="text-align: center;">Actividad 12</h1><br><br>
+      </div>
+      <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+    </header>
+    <div class="background_image">
+      <div class="content">
+        <h2>Instrucciones</h2><br>
+        <div class="steps">
+          <ul>
+            <li>Instalar un sistema en django con bases de datos y uno en ruby on rails con bases de datos y asignar diferentes permisos de acceso a los grupos de usuarios en cada sistema.</li><br><br>
+          </ul>
+        </div>
+        <h2>Requerimientos</h2><br>
+        <div class="steps">
+          <ul>
+            <li>Conexion a internet para instalar y configurar Ruby, Rails, Python y Django.</li><br><br>
+          </ul>
+        </div>
+        <h2>Comencemos</h2><br><br>
+        <ol>
+          <li>Lo primero que haremos es instalar y configurar Django y Rails. Para esto basta con seguir las instrucciones de las tareas 5 y 6 respectivamente, en donde se explica todo este procedimiento
+              paso por paso para sistemas Linux y Windows.</li><br><br>
+          <li>Una vez realizado todo esto, nos dirigiremos a la asignacion de permisos. Para eso haremos uso de la consola de comandos, y de dos comandos: chgrp y chmod. chgrp sirve para cambiar el grupo
+              propietario de un fichero, y chmod para modificar los permisos directamente. En este caso delegaremos el proyecto de Django al Grupo_A, y el proyecto de Rails al Grupo_B.</li><br><br>
+          <div class="photo">
+            <img src="1.png" height="600" width="1000"><br><br>
+          </div>
+          <p>El comando -R sirve para que el comando chgrp se haga de manera recursiva. En otras palabras, si omitimos -R lo que cambia de grupo propietario solamente es la carpeta first_project, mas no
+             su contenido. Si utilizamos el comando -R, el cambio aplica a la carpeta y todo el contenido. Esto va a ser utilizado de la misma manera para el comando chmod.</p><br><br>
+          <li>Una vez cambiado el grupo propietario, procederemos al cambio de derechos.</li>
+          <p>chmod funciona de modo octal y de modo texto; el primero es el mas comun y por ende el que utilizaremos. La sintaxis basica es la siguiente: <br><br> sudo chmod XYZ ruta-archivo <br><br>
+             En esta representación, X se refiere a los permisos del usuario propietario, Y a los del grupo propietario y Z a los del resto de usuarios. X, Y y Z pueden ser cualquier número entero del 0 al 7,
+             teniendo en cuenta la siguiente regla: <br><br>
+             <ul>
+               <li>0 – Ningún permiso</li>
+               <li>1 – Permiso de ejecución</li>
+               <li>2 – Permiso de escritura</li>
+               <li>4 – Permiso de lectura</li>
+             </ul><br> Cualquier combinación de los diferentes tipos de permisos que podemos tener se obtiene sumando los números que lo representan. Así, nos salen las siguientes combinaciones: <br><br>
+             <ul>
+               <li>0 – Ningún permiso</li>
+               <li>1 – Ejecución</li>
+               <li>2 – Escritura</li>
+               <li>3 – Escritura y ejecución</li>
+               <li>4 – Lectura</li>
+               <li>5 – Lectura y ejecución</li>
+               <li>6 – Lectura y escritura</li>
+               <li>7 – Lectura, escritura y ejecución</li>
+             </ul><br></p>
+          <li>Tomando esto en cuenta, escribiremos los siguientes comandos para ambos proyectos, dando todos los permisos al usuario creador (el administrador del sistema), todos los permisos para los
+              integrantes del grupo de trabajo, y ningun tipo de permiso para cualquier usuario externo extra. </li><br><br>
+          <div class="photo">
+            <img src="2.png" height="600" width="1000"><br><br>
+          </div>
+          <li>Una vez realizado todo esto, habremos concluido exitosamente la modificacion de derechos y acceso para los usuarios, dependiendo del grupo de trabajo.</li><br><br><br><br>
+        </ol>
+        <a href="../index.html" class="back-button">Home</a><br><br><br><br>
+      </div>
+    </div>
+  </body>
+</html>
