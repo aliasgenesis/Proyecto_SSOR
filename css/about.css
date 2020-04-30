@@ -31,7 +31,7 @@ header {
 .background_image {
 	margin-top: 150px;
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 	position: absolute;
 	background-size: cover;
 	background-position: center;
@@ -49,5 +49,6 @@ header {
 }
 
 .photo {
-	margin-left: 250px;
+  margin-top: 50px;
+	margin-left: 0px;
 }
