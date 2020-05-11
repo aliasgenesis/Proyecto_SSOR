@@ -67,7 +67,7 @@
           <div class="photo">
             <img src="9.png" height="400" width="800"><br><br>
           </div>
-          <li style="color: white;">Ahora procederemos a hacer lo equivalente en nuestro Windows Server. Para esto, ejecutaremos PowerShell como administradores, e ingresaremos el siguiente comando para asegurarnos de que nuestro servicio de
+          <li style="color: white;">Ahora procederemos a hacer lo equivalente en nuestro Windows. Para esto, ejecutaremos PowerShell como administradores, e ingresaremos el siguiente comando para asegurarnos de que nuestro servicio de
               Samba está disponible: <br><br> Get-SmbServerConfiguration | Select EnableSMB2Protocol <br><br> Hecho esto, ahora activaremos el servicio, mediante el comando: <br><br> Set-SmbServerConfiguration -EnableSMB2Protocol $true <br><br>
           </li><br><br>
           <div class="photo">
@@ -86,7 +86,7 @@
             <img src="13.png" height="400" width="800"><br><br>
           </div>
           <li>Seleccionaremos los usuarios que queremos que tengan acceso a la carpeta (en nuestro caso Todos), y verificaremos los permisos que queremos que se otorguen. Después de dar clic en Aplicar y en Aceptar todos los cambios
-              estaremos listos para poder acceder a nuestras carpetas desde los diferentes sistemas operativos que estén unidos a nuestro servior local (desde linux podemos acceder desde archivos >> otras ubicaciones, en Conectar al servidor - en la parte inferior de la ventana - 
+              estaremos listos para poder acceder a nuestras carpetas desde los diferentes sistemas operativos que estén unidos a nuestro servior local (desde linux podemos acceder desde archivos >> otras ubicaciones, en Conectar al servidor - en la parte inferior de la ventana -
               poner el ip de la computadora a la cuál queremos acceder - precedido por la direccion smb://, dando clic en conectar, e ingresando con cualquiera de los usuarios que autenticamos con permisos de acceso, que en nuestro caso eran todos.).</li><br><br><br><br><br>
         </ol>
       <a href="../index.html" class="back-button">Home</a><br><br><br><br>
